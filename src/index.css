@@ -1,0 +1,35 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+
+@layer base {
+
+  body {
+    @apply overflow-x-hidden normal-case bg-[#fff] relative ;
+  }
+  h1 {
+    @apply text-[48px] leading-[72px] font-bold capitalize tracking-[-0.05em] mb-2 text-[#fff];
+  }
+  h2 {
+    @apply text-[48px] leading-[72px] font-bold capitalize tracking-[-0.05em] mb-2 text-[#000];
+  }
+  h3 {
+    @apply text-[44px] lg:text-[2.75rem] font-semibold capitalize mb-2 text-[#000009];
+  }
+  .section {
+    @apply h-[30rem] w-screen mt-[5rem] ;
+  }
+  .btn {
+    @apply py-[18px] px-[50px] h-[66px] w-56 flex items-center text-base uppercase font-semibold bg-primary text-white;
+  }
+
+}
