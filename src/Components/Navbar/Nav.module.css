@@ -6,10 +6,12 @@
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
 }
 
 .logo-container {
     margin-left: 80px;
+
 }
 
 .logo-container span {
@@ -25,6 +27,7 @@
     display: flex;
     width: 300px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .link a {
@@ -39,4 +42,36 @@
     text-decoration: none;
     color: rgba(14, 34, 14, 0.8);
 }
+.navMenu {
+    display: none;
+}
+
+.fa-code {
+  margin-left: 1rem;
+}
+.main-container{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,5 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import styles from './Nav.module.css';
+
+
 import * as data from './links.json';
 const linksString = JSON.stringify(data);
 const links = JSON.parse(linksString).links;
@@ -26,17 +29,34 @@ const Links: React.FC<{ links: Link[] }> = ({ links }) => {
 };
 
 const Nav: React.FC<{}> = () => {
+     const [click, setClick] = React.useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
     return (
-        <nav className={styles.navbar}>
+        <div>
+        <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
+        <nav className={styles.navbar} onClick={e => e.stopPropagation()} >
             <div className={styles['logo-container']}>
-                <span>CHATTER</span>
+                <span className='w-2/12'>CHATTER</span>
             </div>
-            <Links links={links} />
+            <div className = 'md:flex hidden gap-8 '>
+                 <Links links={links} />
             <div className='flex gap-2  '>
-                <button className='border-[3px] border-blue-500 rounded-lg w-[157px] h-14 font-bold '>Login in</button>
-                <button className="border-[3px] border-blue-500 rounded-lg w-[157px] h-14 text-white bg-blue-500 font-bold ">Sign Up</button>
+               <Link to='/register'> <button className='btn'>Login in</button> </Link>
+                <Link to='/register'><button>Sign Up</button></Link>
             </div>
+            </div>
+
+            <div className="nav-icon md:hidden " onClick={handleClick}>
+            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+
+          </div>
+
+
         </nav>
+        </div>
+
     )
 }
 
