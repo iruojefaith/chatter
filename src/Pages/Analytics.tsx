@@ -5,7 +5,7 @@ import {MdOutlineAnalytics} from 'react-icons/md'
 const Analytics = () => {
   return (
     <div className='p-8'>
-        <h4>Post Analytics</h4>
+        <h3>Post Analytics</h3>
 
         <br />
 

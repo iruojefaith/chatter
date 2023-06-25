@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
-import Sidebar from '../Dashboard/sidebar'
-import Search from '../Dashboard/search';
+import Sidebar from '../Dashboard/Sidebar'
+import Search from '../Dashboard/Search';
 import BlogPost from '../Dashboard/Content'
 
 

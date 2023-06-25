@@ -53,27 +53,28 @@ const SideBar = () => {
             <div>
                 <h5>Overview</h5>
                 <br />
-                <menu className='flex flex-col menu-items'>
+                <menu className='flex flex-col menu-items '>
                     {sideBarMenuItems.map((menuItem) =>
-                    <Link to={menuItem.path} className='flex items-center gap-2 hover:ml-2'><span>{menuItem.icon}</span> <p>{menuItem.name}</p> </Link>
+                    <Link to={menuItem.path} className='flex items-center gap-2 hover:ml-2 mb-4'><span>{menuItem.icon}</span> <h6>{menuItem.name}</h6> </Link>
                     )}
                 </menu>
                 <br />
                 <h5>Trending Tags</h5>
                 <br />
                 <menu className='flex flex-col menu-items'>
-                    <a href='#' className='mb-2 '> Programming </a>
-                    <a href='#' className='mb-2'> Data Science</a>
-                    <a href='#' className='mb-2'> Technology </a>
-                    <a href='#' className='mb-2'> Machine Learning</a>
-                    <a href='#' className='mb-2'> Politics </a>
+                    <a href='#' className='mb-4 '> Programming </a>
+                    <a href='#' className='mb-4 '> Data Science</a>
+                    <a href='#' className='mb-4 '> Technology </a>
+                    <a href='#' className='mb-4 '> Machine Learning</a>
+                    <a href='#' className='mb-4 '> Politics </a>
+                    <a href='#' className='mb-4 '> See All </a>
                 </menu>
                 <br />
                 <h5>Personal</h5>
                 <br />
                 <menu className='flex flex-col menu-items'>
-                    <Link to='#' className='flex gap-2 items-center'><span> {<FaRegUser/>} </span> <p>Account</p></Link>
-                    <Link to='#' className='flex gap-2 items-center'><span> <MdOutlineNotificationsNone/> </span> <p>Notifications</p></Link>
+                    <Link to='#' className='flex gap-2 items-center'><span> {<FaRegUser/>} </span> <h6>Account</h6></Link>
+                    <Link to='#' className='flex gap-2 items-center'><span> <MdOutlineNotificationsNone/> </span> <h6>Notifications</h6></Link>
                 </menu>
             </div>
        </div>
