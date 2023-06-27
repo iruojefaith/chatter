@@ -4,7 +4,7 @@ import PageRight from '../Components/Login/PageRight'
 
 const Login = () => {
   return (
-    <div className='flex h-[100vh]'>
+    <div className='md:flex h-[100vh]'>
       <PageLeft />
       <PageRight />
     </div>

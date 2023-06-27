@@ -1,18 +1,18 @@
 import {VscBook} from 'react-icons/vsc'
-import {AiOutlineComment, AiOutlineHeart} from 'react-icons/ai'
-import {MdOutlineAnalytics} from 'react-icons/md'
-import Post1 from '../Assets/post1.png'
-import Post2 from '../Assets/post2.png'
+import {AiOutlineComment, AiOutlineHeart} from 'react-icons/ai';
+import {MdOutlineAnalytics} from 'react-icons/md';
+import Post1 from '../Assets/post1.png';
+import Post2 from '../Assets/post2.png';
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getFirestore, doc, getDoc, DocumentData } from 'firebase/firestore';
 import {db} from '../Config/config'
 
-type postProps = {
+type Props = {
     post: any
 }
 
-const PostPreview: React.FC<postProps> = ({post}) => {
+const PostPreview: React.FC<Props> = ({post}) => {
     const [authorData, setAuthorData] = useState<DocumentData | undefined>(undefined);
 
   useEffect(() => {
@@ -23,8 +23,6 @@ const PostPreview: React.FC<postProps> = ({post}) => {
 
     getAuthorData();
   }, []);
-
-    console.log(authorData)
 
   return (
     <div className="border p-4 md:p-8">

@@ -9,7 +9,7 @@ function updateToggle(id: React.SetStateAction<number>) {
     setToggle(id)
 }
   return (
-    <div className='w-[55%] py-8'>
+    <div className='md:w-[55%] py-8'>
         <div className="w-[80%] mx-auto">
             <ul className="flex w-full justify-between list-none">
                 <li onClick={()=>updateToggle(1)} className=' cursor-pointer  '>REGISTER</li>

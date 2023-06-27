@@ -1,6 +1,6 @@
-import {VscBook} from 'react-icons/vsc'
-import {AiOutlineComment, AiOutlineHeart} from 'react-icons/ai'
-import {MdOutlineAnalytics} from 'react-icons/md'
+import {PiBookmark} from 'react-icons/pi'
+import {AiOutlineComment, AiOutlineHeart} from 'react-icons/ai';
+import {MdOutlineAnalytics} from 'react-icons/md';
 
 const Analytics = () => {
   return (
@@ -25,7 +25,7 @@ const Analytics = () => {
             </div>
             <br />
             <h4>Starting out as a Product designer</h4>
-            <p className="tex-sm flex gap-2 items-center text-[#626262]"><span className='text-[#000]'> <VscBook/> </span> 10 mins read</p>
+            <p className="text-sm flex gap-2 items-center text-[#626262]"><span className='text-[#000]'> <PiBookmark/> </span> 10 mins read</p>
             <br />
             <p className='text-[#626262] -mt-[2rem]'>Embarking on a journey as a product designer can be an exhilarating and fulfilling experience. As a profession that bridges the realms of art, technology, and problem-solving, product design offers an opportunity to shape the way people interact with the world around them.</p>
             <div className="flex justify-between">

@@ -5,7 +5,7 @@ import { MdAod } from "react-icons/md";
 
 const Context = createContext()
 
-const ChatterProvider = ({children}) => {
+const Provider = ({children}) => {
     const [users, setUsers] = useState([])
     const [posts, setPosts] = useState([])
     const [single, setsingle] = useState()
@@ -66,4 +66,4 @@ const ChatterProvider = ({children}) => {
 }
 
 
-export {Context, ChatterProvider}
+export {Context, Provider}

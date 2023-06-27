@@ -1,11 +1,13 @@
 import React from 'react'
+import {FcGoogle} from 'react-icons/fc';
+import {BsLinkedin} from 'react-icons/bs'
 
 interface props {
     name: number;
 }
 const Register = ({name}: props) => {
   return (
-    <div className={name === 1 ? "show-content " :' content reg-form'}>
+    <div className={name === 1 ? "show-content w-full " :' content reg-form'}>
         <hr className='w-[50%] border-t-4 border-[#543EE0] mb-6 -mt-2 '/>
         <h4>Register as a Reader/Writer</h4>
         <div className="h-3"></div>
@@ -52,9 +54,9 @@ const Register = ({name}: props) => {
             <div className="h-3"></div>
             <button className="btn-pry w-full">Create Account</button>
             <div className="h-3"></div>
-            <button className='w-full p-2 rounded-lg border'>Sign up with Google</button>
+            <button className='w-full py-3 rounded-lg border-2 bg-transparent flex align-middle justify-center gap-2 border-[#543EE0] text-[#000]'><FcGoogle className='text-[1.5rem]'/>Sign up with Google</button>
             <div className="h-3"></div>
-            <button className='w-full p-2 rounded-lg border'>Sign up with Linkedin</button>
+            <button className='w-full py-3 rounded-lg border-2 bg-transparent flex align-middle justify-center gap-2 border-[#543EE0] text-[#000]'><BsLinkedin className='text-[1.5rem] fill-[#543EE0]'/>Sign up with Linkedin</button>
         </form>
     </div>
   )

@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Signup from "./Pages/Login";
 import Login from "./Pages/Login";
 import Dashboard from './Pages/Dashboard'
-import { ChatterProvider } from "./Dashboard/Context";
+import { Provider } from "./Dashboard/Context";
 
 
 
@@ -12,7 +12,7 @@ import { ChatterProvider } from "./Dashboard/Context";
 function App() {
   return (
     <>
-  <ChatterProvider>
+  <Provider>
     <Router>
         <div >
           <Routes>
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </div>
     </Router>
-  </ChatterProvider>
+  </Provider>
 
     </>
   );
