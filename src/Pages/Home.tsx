@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../Components/Home/Header'
-import About from '../Components/Home/About'
-import Join from '../Components/Home/Join'
-import ChatterSection from '../Components/Home/ChatterSection'
-import Footer from '../Components/Footer/Footer'
+import Header from '../Components/home/Header'
+import About from '../Components/home/About'
+import Join from '../Components/home/Join'
+import ChatterSection from '../Components/home/ChatterSection'
+import Footer from '../Components/footer/Footer'
 import Nav from '../Components/Navbar/Navbar'
 
 
