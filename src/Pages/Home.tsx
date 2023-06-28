@@ -9,14 +9,14 @@ import Nav from '../components/Navbar/Navbar'
 
 const Home = () => {
   return (
-    <>
+    <div>
        <Nav />
         <Header />
         <About />
         <Join />
         <ChatterSection />
         <Footer />
-    </>
+    </div>
   )
 }
 
