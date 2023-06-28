@@ -6,7 +6,7 @@ import Analytics from '../Pages/Analytics';
 import PostDetails from '../Pages/PostDetails';
 import { useContext } from 'react';
 import { Context } from '../Dashboard/Context';
-import Post from '../Pages/Posts'
+import Post from '../Pages/Post'
 
 type articleProps = {
   postId: any
@@ -36,7 +36,8 @@ const Content = () => {
             <Route path="feed" element={<Feed/>} />
             <Route path="analytics" element={<Analytics/>} />
             <Route path={`post/${location.pathname}`} element={<PostDetails postId={postPath} post={post} author={author}/>} />
-            <Route path={'createpost'} element={<Post/>}/>
+            <Route path={`${location.pathname}`} element={<Post/>}/>
+
         </Routes>
 
         <Footer />

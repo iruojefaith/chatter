@@ -1,5 +1,5 @@
 import {HiOutlinePencil} from 'react-icons/hi'
-import PostPreview from './PostPreview'
+import PostPreview from './PostPreview';
 import {useContext} from 'react'
 import { Context } from './Context'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ const Feed = () => {
                     <p>Explore different content you’d love </p>
                 </div>
 
-                <button className="btn-pry w-fit flex gap-2 items-center p-4  "><HiOutlinePencil/> <span className='text-white'>Post a content</span></button>
+              <Link to="createpost">  <button className="btn-pry w-fit flex gap-2 items-center p-4  "><HiOutlinePencil/> <span className='text-white'>Post a content</span></button></Link>
             </div>
             <br /> <br />
             <div className="border flex justify-between items-center px-4 py-6 rounded-lg">

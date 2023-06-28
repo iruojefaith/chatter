@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
                 <h1>Welcome to Chatter: A Haven for Text-</h1>
                 <h1>Based Content</h1>
             <p className='text-white text-lg '>Unleash the Power of Words, Connect with Like-minded Readers<br /> and Writers</p>
-            <button className=" mt-4 ">Get started</button>
+            <Link to='/register'><button className=" mt-4 ">Get started</button></Link>
             </div>
 
         </div>

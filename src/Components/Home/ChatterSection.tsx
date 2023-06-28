@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import ChatterBg from '../../Assets/join.png';
 import Lady from '../../Assets/lady.png';
 import Guy from '../../Assets/guy.png';
@@ -37,7 +38,7 @@ const ChatterSection = () => {
                         <p>Share people your great ideas, and also read write-ups based on your interests. connect with people of same interests and goals
                         </p>
 
-                        <button >Get Started</button>
+                         <Link to='/register'><button >Get Started</button></Link>
                 </div>
 
             </div>

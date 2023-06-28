@@ -1,14 +1,14 @@
 import  { useState, useEffect, createContext } from "react";
 import {collection, getDocs, setDoc, doc} from 'firebase/firestore';
-import {db} from '../Config/config';
+import {db, auth, googleProvider, mailProvider} from '../Config/config'
 import { MdAod } from "react-icons/md";
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 
 const Context = createContext()
 
 const Provider = ({children}) => {
     const [users, setUsers] = useState([])
     const [posts, setPosts] = useState([])
-    const [single, setsingle] = useState()
 
     useEffect(()=> {
         const getUsers = async () => {
@@ -41,7 +41,7 @@ const Provider = ({children}) => {
                             brief: doc.data().brief,
                             category: doc.data().category,
                             postLength: doc.data().postLength,
-                            bannerImage: doc.data().bannerImage,
+                            bannerImage: doc.data().image,
                             title: doc.data().title,
                             comments: doc.data().commentCount,
                             likes: doc.data().likeCount,
@@ -57,9 +57,19 @@ const Provider = ({children}) => {
         getPosts()
     },[])
 
+     const handleGoogleAuth = async (e) => {
+        e.preventDefault()
+        await signInWithPopup(auth, googleProvider)
+    }
+
+     const handleEmailAuth = async (e) => {
+        e.preventDefault()
+        await signInWithEmailAndPassword
+    }
+
     return (
         <Context.Provider
-        value={{posts,users}}>
+        value={{posts, users, handleGoogleAuth, handleEmailAuth}}>
             {children}
         </Context.Provider>
     )

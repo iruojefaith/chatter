@@ -76,6 +76,8 @@ const SideBar = () => {
                     <Link to='#' className='flex gap-2 items-center'><span> {<FaRegUser/>} </span> <h6>Account</h6></Link>
                     <Link to='#' className='flex gap-2 items-center'><span> <MdOutlineNotificationsNone/> </span> <h6>Notifications</h6></Link>
                 </menu>
+                <br />
+                <h5>Log out</h5>
             </div>
        </div>
     </aside>
