@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
-import Sidebar from '../Dashboard/Sidebar'
-import Search from '../Dashboard/Search';
-import BlogPost from '../Dashboard/Content'
+import Sidebar from '../dashboard/Sidebar'
+import Search from '../dashboard/Search';
+import BlogPost from '../dashboard/Content'
 
 
 const Dashboard = () => {
