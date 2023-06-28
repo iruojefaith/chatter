@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import {FcGoogle} from 'react-icons/fc';
 import {BsLinkedin} from 'react-icons/bs';
-import { Context } from '../../dashboard/Context';
+import { Context } from '../../context/Context';
 
 interface props {
     name: number;

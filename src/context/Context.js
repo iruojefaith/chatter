@@ -1,6 +1,6 @@
 import  { useState, useEffect, createContext } from "react";
 import {collection, getDocs, setDoc, doc} from 'firebase/firestore';
-import {db, auth, googleProvider, mailProvider} from '../Config/config'
+import {db, auth, googleProvider, mailProvider} from '../firebase.js'
 import { MdAod } from "react-icons/md";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 

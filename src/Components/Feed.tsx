@@ -1,8 +1,9 @@
+import {useContext} from 'react'
+import { Link } from 'react-router-dom'
 import {HiOutlinePencil} from 'react-icons/hi'
 import PostPreview from './PostPreview';
-import {useContext} from 'react'
-import { Context } from './Context'
-import { Link } from 'react-router-dom'
+import { Context } from '../context/Context'
+
 
 const Feed = () => {
   const { users, posts }: any = useContext(Context);

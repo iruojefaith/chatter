@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../Components/home/Header'
-import About from '../Components/home/About'
-import Join from '../Components/home/Join'
-import ChatterSection from '../Components/home/ChatterSection'
-import Footer from '../Components/footer/Footer'
-import Nav from '../Components/Navbar/Navbar'
+import Header from '../components/Home/Header'
+import About from '../components/Home/About'
+import Join from '../components/Home/Join'
+import ChatterSection from '../components/Home/ChatterSection'
+import Footer from '../components/Footer/Footer'
+import Nav from '../components/Navbar/Navbar'
 
 
 const Home = () => {
@@ -20,4 +20,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

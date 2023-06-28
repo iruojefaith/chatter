@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from '../dashboard/Sidebar'
-import Search from '../dashboard/Search';
-import BlogPost from '../dashboard/Content'
+import Sidebar from '../components/Sidebar'
+import Search from '../components/Search';
+import BlogPost from '../components/Content'
 
 
 const MainApp = () => {

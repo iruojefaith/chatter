@@ -1,11 +1,11 @@
 import { useState, useEffect} from 'react'
 import {Route, Routes, useLocation} from 'react-router-dom'
 import Feed from "./Feed"
-import Footer from "../Components/footer/Footer"
+import Footer from "./Footer/Footer"
 import Analytics from '../pages/Analytics';
 import PostDetails from '../pages/PostDetails';
 import { useContext } from 'react';
-import { Context } from './Context';
+import { Context } from '../context/Context';
 import Post from '../pages/Post'
 
 type articleProps = {

@@ -1,6 +1,6 @@
 import React from 'react'
-import PageLeft from '../Components/Login/PageLeft'
-import PageRight from '../Components/Login/PageRight'
+import PageLeft from '../components/Login/PageLeft'
+import PageRight from '../components/Login/PageRight'
 
 const Login = () => {
   return (

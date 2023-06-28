@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom'
 import {VscBook} from 'react-icons/vsc'
 import {AiOutlineComment, AiOutlineHeart} from 'react-icons/ai';
 import {MdOutlineAnalytics} from 'react-icons/md';
-import Post1 from '../Assets/post1.png';
-import Post2 from '../Assets/post2.png';
-import { Link } from 'react-router-dom'
+import Post1 from '../Assets/post1.png'
+
 import { useEffect, useState } from 'react'
 import { getFirestore, doc, getDoc, DocumentData } from 'firebase/firestore';
-import {db} from '../Config/config'
+import {db} from '../firebase.js';
 
 type Props = {
     post: any
@@ -60,4 +60,4 @@ const PostPreview: React.FC<Props> = ({post}) => {
   )
 }
 
-export default PostPreview
+export default PostPreview;
