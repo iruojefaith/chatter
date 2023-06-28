@@ -1,10 +1,10 @@
-import React,{ useState } from 'react'
+import React from 'react'
 import Sidebar from '../dashboard/Sidebar'
 import Search from '../dashboard/Search';
 import BlogPost from '../dashboard/Content'
 
 
-const Dashboard = () => {
+const MainApp = () => {
 
   return (
     <div className='h-screen overflow-hidden'>
@@ -16,4 +16,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard;
+export default MainApp;
