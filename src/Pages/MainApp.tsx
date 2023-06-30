@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from '../components/chatterSidebar';
 import Search from '../components/Search';
+import Sidebar from '../components/Sidebar'
 import BlogPost from '../components/Content'
 
 
@@ -8,8 +8,8 @@ const MainApp = () => {
 
   return (
     <div className='h-screen overflow-hidden'>
-            <Sidebar />
             <Search />
+            <Sidebar />
             <BlogPost />
 
     </div>
