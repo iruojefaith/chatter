@@ -1,0 +1,20 @@
+{
+    "links": [
+        {
+            "label": "Home",
+            "href": "/home"
+        },
+        {
+            "label": "About Us",
+            "href": "/about"
+        },
+        {
+            "label": "Contact",
+            "href": "/contact"
+        },
+         {
+            "label": "Blogs",
+            "href": "/blogs"
+        }
+    ]
+}
