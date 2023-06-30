@@ -21,7 +21,7 @@ const Post = () => {
           <Modal>
         <div className='flex gap-5'>
           <button className='border rounded-full p-2 w-[3rem] h-[3rem] border-[#543ee0ad] items-center flex justify-center cursor-pointer bg-transparent text-transparent' onClick={close}><GrClose className='fill-[#543ee0ad]'/></button>
-          <div className='border rounded-full p-2 w-[3rem] h-[3rem] border-[#543ee0ad] items-center flex justify-center cursor-pointer'><BsFillImageFill className='fill-[#543ee0ad]'/></div>
+          <input className='border rounded-full p-2 w-[3rem] h-[3rem] border-[#543ee0ad] items-center flex justify-center cursor-pointer'><BsFillImageFill className='fill-[#543ee0ad]'/></input>
           <div className='border rounded-full p-2 w-[3rem] h-[3rem] border-[#543ee0ad] items-center flex justify-center cursor-pointer '><BsCameraVideo className='fill-[#543ee0ad]'/></div>
 
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/chatterSidebar';
 import Search from '../components/Search';
 import BlogPost from '../components/Content'
 

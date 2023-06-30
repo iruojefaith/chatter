@@ -6,8 +6,8 @@ import {LuUsers} from 'react-icons/lu'
 import {MdOutlineDrafts,MdOutlineAnalytics,MdOutlineNotificationsNone} from 'react-icons/md'
 import { useState } from 'react'
 
-const SideBar = () => {
-    const [isOpen, setIsOpen] = useState(false)
+const ChatterSideBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     function toggleSidebar() { setIsOpen(!isOpen) }
 
     const sideBarMenuItems : {
@@ -84,4 +84,4 @@ const SideBar = () => {
   )
 }
 
-export default SideBar;
+export default ChatterSideBar;
